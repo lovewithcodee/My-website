@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.css">
+
+    <style>
+        body{
+            background: url(../Images/Background/Cartoon\ Girl.jpg) no-repeat fixed;
+            background-size: cover;
+        }
+        .login-card{
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(30px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        .form-control{
+            background: rgba(0, 0, 0, 0.2);
+            height: 42px;
+        }
+        .form-control:focus{
+            background: rgba(0, 0, 0, 0.2);
+            height: 45px;
+        }
+        .btn-login {
+            transition: 0.3s;
+        }
+        .btn-login:hover {
+            transform: translateY(-2px);
+            color: aquamarine;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .form-control{
+            border: 1px rgba(0, 0, 0, 0.2);
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <div class="container text-dark vh-100">
+        <div class="row h-100 justify-content-center align-items-center">
+
+            <div class="col-xxl-6 col-lg-7 col-md-9 col-xl-6" >
+
+                <div class="login-card p-5 rounded-4">
+                    <h3 class="mb-4 text-dark text-center fs2 fw-bolder"> Login Form</h3>
+
+                    <form action="">
+
+                        <div class="mb-4">
+                            <input type="email" class="form-control border-0" placeholder="Email Address">
+                        </div>
+
+                        <div class="mb-4">
+                            <input type="password" class="form-control border-0" placeholder="Password">
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input type="checkbox" name="" class="form-check-input" >
+                                <label for="remember">Remember Me </label>
+                            </div>
+                        </div>
+
+                        <div class="d-grid mb2">
+                            <button type="submit" class="btn btn-primary btn-login rounded-3 fw-semibold">Login</button>
+                        </div>
+                        <p class="mt-1">Don't Have an account ? <a href="../Pages/SignUp.html" class="text-dark fw-bold">Sign up</a></p> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
