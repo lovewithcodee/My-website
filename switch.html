@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background: gray;
+    }
+    h2{
+        color:bisque;
+        padding: 50px 100px;
+    }
+    select{
+        padding: 4px;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+    <h2>Please Select Month 
+        <select name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+    </h2>
+
+    
+    <p></p>
+
+</body>
+<script>
+    const select = document.querySelector('select');
+    let p = document.querySelector('p')
+
+    select.addEventListener('change', ()=>{
+        const month = select.value
+        switch(month){
+            case "1" : p.innerHTML = "January -31"
+             break
+            case "2" : p.innerHTML = "February - 28/29"
+             break
+            case "3" : p.innerHTML = "March - 31"
+             break
+            case "4" : p.innerHTML = "April - 30"
+             break
+            case "5" : p.innerHTML = "May 31"
+             break
+            case "6" : p.innerHTML = "June 30"
+             break
+            case "7" : p.innerHTML = "July 31"
+             break
+            case "8" : p.innerHTML = "August 31"
+             break
+            case "9" : p.innerHTML = "September 30"
+             break
+            case "10" : p.innerHTML = "October 31"
+             break
+            case "11" : p.innerHTML = "November 30"
+             break
+            case "12" : p.innerHTML = "December 31"
+             break
+        }
+    })
+</script>
+</html>
